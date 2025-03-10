@@ -134,13 +134,10 @@ https://templatemo.com/tm-545-finance-business
 								<a class="nav-link" href="services.html">Serviços</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="contact.html">Blog</a>
+								<a class="nav-link" href="blog.html">Blog</a>
 							</li>
 							<li class="nav-item active">
-								<a class="nav-link" href="contact.html">Contactos<span class="sr-only">(current)</span></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="one-page.html">--</a>
+								<a class="nav-link" href="contact.html">Contactos</a>
 							</li>
 						</ul>
 					</div>
@@ -168,7 +165,7 @@ https://templatemo.com/tm-545-finance-business
 							<i class="fa fa-phone"></i>
 							<h4>Phone</h4>
 							<p>Vivamus ut tellus mi. Nulla nec cursus elit, id vulputate nec cursus augue.</p>
-							<a href="#">090-080-0760</a>
+							<b>(+351) 911 000 111</b>
 						</div>
 					</div>
 					<div class="col-md-6">
@@ -176,14 +173,14 @@ https://templatemo.com/tm-545-finance-business
 							<i class="fa fa-envelope"></i>
 							<h4>Email</h4>
 							<p>Vivamus ut tellus mi. Nulla nec cursus elit, id vulputate nec cursus augue.</p>
-							<a href="#">info@company.com</a>
+							<b>info@company.com</b>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="callback-form contact-us">
+		<!-- <div class="callback-form contact-us">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -194,7 +191,7 @@ https://templatemo.com/tm-545-finance-business
 					</div>
 					<div class="col-md-12">
 						<div class="contact-form">
-							<form id="contact" action="" method="get">
+							<form id="contact">
 								<div class="row">
 									<div class="col-lg-4 col-md-12 col-sm-12">
 										<fieldset>
@@ -227,7 +224,7 @@ https://templatemo.com/tm-545-finance-business
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- <div id="map">
 			 How to change your own map point
@@ -246,7 +243,7 @@ https://templatemo.com/tm-545-finance-business
 			></iframe>
 		</div> -->
 
-		<div class="partners contact-partners">
+		<div class="partners contact-partners" style="margin-top: 10rem !important;">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -354,7 +351,7 @@ https://templatemo.com/tm-545-finance-business
 					<div class="col-md-3 footer-item last-item">
 						<h4>Contacto</h4>
 						<div class="contact-form">
-							<form id="contact footer-contact" action="" method="post">
+							<form id="contact footer-contact">
 								<div class="row">
 									<div class="col-lg-12 col-md-12 col-sm-12">
 										<fieldset>
@@ -373,7 +370,7 @@ https://templatemo.com/tm-545-finance-business
 									</div>
 									<div class="col-lg-12">
 										<fieldset>
-											<button type="submit" id="form-submit" class="filled-button">Enviar</button>
+											<button type="submit" id="whatsapp-submit" class="filled-button">Enviar</button>
 										</fieldset>
 									</div>
 								</div>
@@ -415,6 +412,31 @@ https://templatemo.com/tm-545-finance-business
 					t.style.color = '#fff';
 				}
 			}
+		</script>
+		<script>
+			document.getElementById('whatsapp-submit').addEventListener('click', function (event) {
+				event.preventDefault(); // Evita o envio padrão do formulário
+
+				// Capturar os valores do formulário
+				let name = document.getElementById('name').value;
+				let email = document.getElementById('email').value;
+				let message = document.getElementById('message').value;
+
+				// Número de telefone para onde a mensagem será enviada (adicione o DDD, ex: 5511998765432)
+				let phoneNumber = '915088315';
+
+				// Criar a mensagem formatada
+				let whatsappMessage = `Olá, o meu nome é ${name}. O meu e-mail é ${email}. ${message}`;
+
+				// Codificar a mensagem para a URL
+				let encodedMessage = encodeURIComponent(whatsappMessage);
+
+				// Criar o link do WhatsApp
+				let whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+				// Abrir o WhatsApp
+				window.open(whatsappURL, '_blank');
+			});
 		</script>
 	</body>
 </html>
