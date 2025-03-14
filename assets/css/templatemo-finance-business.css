@@ -271,8 +271,8 @@ header .navbar {
 	color: #a4c639 !important;
 }
 .navbar .navbar-brand {
-	float: left;
-	margin-top: 12px;
+	/* float: left; */
+	/* margin-top: 12px; */
 	outline: none;
 }
 .navbar .navbar-brand h2 {
@@ -388,15 +388,10 @@ header .navbar {
 }
 
 .Modern-Slider .item-1 .img-fill {
-	background-image: url(../images/foto-capa-principal.jpg);
+	background-image: url(../images/capa1.jpg);
 }
-
 .Modern-Slider .item-2 .img-fill {
-	background-image: url(../images/foto-capa-principal.jpg);
-}
-
-.Modern-Slider .item-3 .img-fill {
-	background-image: url(../images/foto-capa-principal.jpg);
+	background-image: url(../images/Capa2.jpg);
 }
 
 .Modern-Slider .NextArrow {
@@ -631,7 +626,7 @@ ul.slick-dots {
 
 .fun-facts {
 	margin-top: 140px;
-	background-image: url(../images/fun-facts-bg.png);
+	background-image: url(../images/estatistica1.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
