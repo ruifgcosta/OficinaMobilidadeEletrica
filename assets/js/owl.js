@@ -184,8 +184,9 @@
 	 * @public
 	 */
 	Owl.Defaults = {
-		items: 3,
-		loop: false,
+		items: 1,
+		loop: true,
+		autoplay: true,
 		center: false,
 		rewind: false,
 		checkVisibility: true,
@@ -2718,7 +2719,7 @@
 	 * @public
 	 */
 	Autoplay.Defaults = {
-		autoplay: false,
+		autoplay: true,
 		autoplayTimeout: 5000,
 		autoplayHoverPause: false,
 		autoplaySpeed: false

@@ -910,7 +910,7 @@ ul.slick-dots {
 
 .partners {
 	margin-top: 140px;
-	background-color: #f7f7f7;
+	background-color: #fcfeff;
 	padding: 60px 0px;
 }
 
@@ -920,7 +920,7 @@ ul.slick-dots {
 }
 
 .partners .partner-item img {
-	max-width: 156px;
+	/* max-width: 156px;*/
 	margin: auto;
 }
 

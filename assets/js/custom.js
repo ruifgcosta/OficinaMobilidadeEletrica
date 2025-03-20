@@ -33,6 +33,7 @@ jQuery(document).ready(function ($) {
 	if ($('.owl-testimonials').length) {
 		$('.owl-testimonials').owlCarousel({
 			loop: true,
+			autoplay: true,
 			nav: false,
 			dots: true,
 			items: 1,
@@ -67,9 +68,9 @@ jQuery(document).ready(function ($) {
 			dots: true,
 			items: 1,
 			margin: 30,
-			autoplay: false,
+			autoplay: true,
 			smartSpeed: 700,
-			autoplayTimeout: 6000,
+			autoplayTimeout: 3000,
 			responsive: {
 				0: {
 					items: 1,
@@ -80,11 +81,11 @@ jQuery(document).ready(function ($) {
 					margin: 0,
 				},
 				576: {
-					items: 2,
+					items: 1,
 					margin: 20,
 				},
 				992: {
-					items: 4,
+					items: 1,
 					margin: 30,
 				},
 			},
