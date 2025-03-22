@@ -418,17 +418,19 @@ https://templatemo.com/tm-545-finance-business
 				let email = document.getElementById('mail').value;
 				let message = document.getElementById('mensagem').value;
 
-				// Número de telefone para onde a mensagem será enviada (adicione o DDD, ex: 5511998765432)
+				// Número de telefone do WhatsApp
 				let phoneNumber = '929248276';
 
-				// Criar a mensagem formatada
-				let whatsappMessage = `Olá, o meu nome é ${name}. O meu e-mail é ${email}. ${message}`;
+				// Criar a mensagem formatada com emojis diretamente no texto
+				let whatsappMessage = `➡ : *${name}*   
+📧 : *${email}*  
+💬 : *${message}*`;
 
-				// Codificar a mensagem para a URL
+				// Codificar a mensagem corretamente para a URL
 				let encodedMessage = encodeURIComponent(whatsappMessage);
 
 				// Criar o link do WhatsApp
-				let whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+				let whatsappURL = `https://api.whatsapp.com/send/?phone=${phoneNumber}&text=${encodedMessage}&type=phone_number&app_absent=0`;
 
 				// Abrir o WhatsApp
 				window.open(whatsappURL, '_blank');
@@ -447,13 +449,15 @@ https://templatemo.com/tm-545-finance-business
 				let phoneNumber = '929248276';
 
 				// Criar a mensagem formatada
-				let whatsappMessage = `Olá, o meu nome é ${name}. O meu e-mail é ${email}. ${message}`;
+				let whatsappMessage = `➡ : *${name}*   
+📧 : *${email}*  
+💬 : *${message}*`;
 
-				// Codificar a mensagem para a URL
+				// Codificar a mensagem corretamente para a URL
 				let encodedMessage = encodeURIComponent(whatsappMessage);
 
 				// Criar o link do WhatsApp
-				let whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+				let whatsappURL = `https://api.whatsapp.com/send/?phone=${phoneNumber}&text=${encodedMessage}&type=phone_number&app_absent=0`;
 
 				// Abrir o WhatsApp
 				window.open(whatsappURL, '_blank');
